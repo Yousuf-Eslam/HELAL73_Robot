@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assembly.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.638761153937852 0.826385517839884 1.32022811373637"
+        rpy="0 0 0" />
+      <mass
+        value="0.201061929829747" />
+      <inertia
+        ixx="0.000323374603809509"
+        ixy="-3.09432309375888E-19"
+        ixz="-3.47283508374262E-20"
+        iyy="0.000643398175455189"
+        iyz="1.06382106690128E-18"
+        izz="0.000323374603809509" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="G:\My Drive\الكلية\Junior\Mechatronics Design\HILAL Project\Mechanical Design\HILAL Arm URDF File\Beta_V6\Assembly.SLDASM\urdf\meshes\base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="G:\My Drive\الكلية\Junior\Mechatronics Design\HILAL Project\Mechanical Design\HILAL Arm URDF File\Beta_V6\Assembly.SLDASM\urdf\meshes\base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_1">
+    <inertial>
+      <origin
+        xyz="0.00893053095799878 -0.0501964237022623 -0.000267555465881641"
+        rpy="0 0 0" />
+      <mass
+        value="0.256765494419994" />
+      <inertia
+        ixx="0.00037997097567768"
+        ixy="7.69676163119527E-05"
+        ixz="7.23177242972422E-07"
+        iyy="0.000377544614662834"
+        iyz="-1.32193832728184E-06"
+        izz="0.000329283641030161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="G:\My Drive\الكلية\Junior\Mechatronics Design\HILAL Project\Mechanical Design\HILAL Arm URDF File\Beta_V6\Assembly.SLDASM\urdf\meshes\Link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="G:\My Drive\الكلية\Junior\Mechatronics Design\HILAL Project\Mechanical Design\HILAL Arm URDF File\Beta_V6\Assembly.SLDASM\urdf\meshes\Link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_1"
+    type="revolute">
+    <origin
+      xyz="0.63876 -1.3252 0.81339"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="10"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="Link_2">
+    <inertial>
+      <origin
+        xyz="0.0650000226690579 0.0101094971645137 -1.4013695281978E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.13081346914469" />
+      <inertia
+        ixx="3.19933477457962E-05"
+        ixy="-1.6396538110455E-11"
+        ixz="3.69281468597153E-11"
+        iyy="0.000339337197206023"
+        iyz="2.35582270089133E-10"
+        izz="0.000316470986061007" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="G:\My Drive\الكلية\Junior\Mechatronics Design\HILAL Project\Mechanical Design\HILAL Arm URDF File\Beta_V6\Assembly.SLDASM\urdf\meshes\Link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="G:\My Drive\الكلية\Junior\Mechatronics Design\HILAL Project\Mechanical Design\HILAL Arm URDF File\Beta_V6\Assembly.SLDASM\urdf\meshes\Link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_2"
+    type="revolute">
+    <origin
+      xyz="0.003 -0.068 0.13"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="Link_1" />
+    <child
+      link="Link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="10"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="Link_3">
+    <inertial>
+      <origin
+        xyz="0.0273712683102569 -1.28257179493607E-05 -0.0546040464940397"
+        rpy="0 0 0" />
+      <mass
+        value="0.17924252226062" />
+      <inertia
+        ixx="0.000431735729782239"
+        ixy="-7.91912037492595E-08"
+        ixz="-7.53992425534326E-08"
+        iyy="0.000432319012881455"
+        iyz="2.14121234423733E-07"
+        izz="9.23438538779844E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="G:\My Drive\الكلية\Junior\Mechatronics Design\HILAL Project\Mechanical Design\HILAL Arm URDF File\Beta_V6\Assembly.SLDASM\urdf\meshes\Link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="G:\My Drive\الكلية\Junior\Mechatronics Design\HILAL Project\Mechanical Design\HILAL Arm URDF File\Beta_V6\Assembly.SLDASM\urdf\meshes\Link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_3"
+    type="revolute">
+    <origin
+      xyz="0 -0.003 0"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="Link_2" />
+    <child
+      link="Link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="10"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="Link_4">
+    <inertial>
+      <origin
+        xyz="-0.0197285071096571 -0.00504137959761752 -0.0135890586703264"
+        rpy="0 0 0" />
+      <mass
+        value="0.0340947397477872" />
+      <inertia
+        ixx="2.78616725279663E-05"
+        ixy="-2.34226081006018E-06"
+        ixz="4.61088384137753E-06"
+        iyy="4.84174561974048E-05"
+        iyz="3.2221287261766E-06"
+        izz="2.62153451954587E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="G:\My Drive\الكلية\Junior\Mechatronics Design\HILAL Project\Mechanical Design\HILAL Arm URDF File\Beta_V6\Assembly.SLDASM\urdf\meshes\Link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="G:\My Drive\الكلية\Junior\Mechatronics Design\HILAL Project\Mechanical Design\HILAL Arm URDF File\Beta_V6\Assembly.SLDASM\urdf\meshes\Link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_4"
+    type="revolute">
+    <origin
+      xyz="0.0037669 -0.01531 -0.17117"
+      rpy="0 0.53715 -3.1416" />
+    <parent
+      link="Link_3" />
+    <child
+      link="Link_4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="10"
+      velocity="1.0" />
+  </joint>
+</robot>
